@@ -1,18 +1,26 @@
-*
+# Root
+.htaccess
+/.htaccess
+wp-config.php
+wp-config-server.php
+robots.txt
+sitemap.xml
+sitemap.xml.gz
+
+.idea/*
 .idea
 .osp
 
 !.gitignore
 
-/!wp-content/
+wp-content/*
+!wp-content/themes
+wp-content/themes/testTheme/node_modules
+wp-content/themes/testTheme/src
 
-/wp-content/*
 
-/!wp-content/themes/
-
-/wp-content/themes/*
-/!wp-content/themes/testTheme/
-
-/wp-content/themes/testTheme/node_modules/
-/wp-content/themes/testTheme/src/
-/wp-content/themes/testTheme/src/images/
+# ignore node and composer dependency
+package-lock.json
+node_modules/
+composer.lock
+wp-content/themes/*/vendor/
